@@ -1,7 +1,7 @@
 module.exports = {
   title: 'MANTRA DAO Docs',
   tagline: 'Official documentation for MANTRA DAO, the community-governed DeFi platform focusing on Staking, Lending, and Governance.',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://mantra-dao-docs.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -44,7 +44,7 @@ module.exports = {
             },
             {
               label: 'CN',
-              href: '...',
+              href: 'docs/cn-placeholder',
             },
             // ... more items
           ],
