@@ -3,4 +3,4 @@ id: mantra-pool
 title: Mantra Pool
 ---
 
-Another one
+Coming soon!

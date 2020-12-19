@@ -8,7 +8,8 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'MANTRA DAO', // Usually your GitHub org/user name.
   projectName: 'MANTRA DAO Docs', // Usually your repo name.
-  // stylesheets: ['href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'],
+  stylesheets: ['https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'],
+  plugins: [require.resolve('docusaurus-lunr-search')],
   themeConfig: {
     navbar: {
       title: 'MANTRA DAO Docs',
@@ -24,7 +25,7 @@ module.exports = {
         },
         {
           to: 'docs/guides',
-          label: 'Guides',
+          label: 'User Guides',
           position: 'left',
         },
         {
@@ -60,32 +61,44 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Community',
+          title: 'Social',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Telegram',
+              href: 'https://t.me/MANTRADAO',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/MANTRADAO',
             },
+            {
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/company/mantradao/',
+            },
+            {
+              label: 'Medium',
+              href: 'https://mantradao.medium.com/',
+            },    
           ],
         },
         {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: 'MANTRA DAO Homepage',
+              href: 'https://mantradao.com/',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/mantradao',
+            },
+            {
+              label: 'White Paper',
+              href: 'https://mantradao.com/files/MANTRA_DAO_Whitepaper.pdf',
+            },
+            {
+              label: 'Brand Assets',
+              href: 'https://mantradao.com/brand-assets',
             },
           ],
         },
@@ -138,13 +151,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/mantradao',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://mantradao.com/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

@@ -9,7 +9,7 @@ module.exports = {
   guides: [
     {
       type: 'category',
-      label: 'Guides',
+      label: 'User Guides',
       items: ['guides', 'staking', 'lending', 'mantra-pool'],
     }
   ],
