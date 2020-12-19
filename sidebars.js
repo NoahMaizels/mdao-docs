@@ -1,14 +1,16 @@
 module.exports = {
-  docs: [
+  about: [
     {
       type: 'category',
       label: 'About MANTRA DAO',
       items: ['about', 'om-token', 'faq'],
     },
+  ],
+  guides: [
     {
       type: 'category',
       label: 'Guides',
-      items: ['products', 'staking', 'lending', 'mantra-pool'],
+      items: ['guides', 'staking', 'lending', 'mantra-pool'],
     }
   ],
   devs: [

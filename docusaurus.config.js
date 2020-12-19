@@ -8,7 +8,7 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'MANTRA DAO', // Usually your GitHub org/user name.
   projectName: 'MANTRA DAO Docs', // Usually your repo name.
-  stylesheets: ['href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'],
+  // stylesheets: ['href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'],
   themeConfig: {
     navbar: {
       title: 'MANTRA DAO Docs',
@@ -19,7 +19,12 @@ module.exports = {
       items: [
         {
           to: 'docs/about',
-          label: 'Users',
+          label: 'About',
+          position: 'left',
+        },
+        {
+          to: 'docs/guides',
+          label: 'Guides',
           position: 'left',
         },
         {
@@ -28,6 +33,22 @@ module.exports = {
           position: 'left',
         },
         {to: 'blog', label: 'News', position: 'left'},
+        {
+          label: 'Lang',
+          position: 'left',
+          items: [
+            {
+              label: 'EN',
+              href: '/',
+              target: ''
+            },
+            {
+              label: 'CN',
+              href: '...',
+            },
+            // ... more items
+          ],
+        },
         {
           href: 'https://github.com/mantradao',
           label: 'GitHub',
@@ -38,19 +59,6 @@ module.exports = {
     footer: {
       style: 'dark',
       links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Style Guide',
-              to: 'docs/',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
-            },
-          ],
-        },
         {
           title: 'Community',
           items: [
